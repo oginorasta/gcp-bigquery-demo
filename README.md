@@ -16,3 +16,10 @@ There are GCP projects ```ogino-app-live``` and ```ogino-userdb-live```. In ```o
 - Easy to spin up and test
 - BigQuery is highly available and easy to use
 - There are provided Google libraries 
+
+### Useful gcloud commands for demoing
+- git clone https://github.com/oginorasta/gcp-bigquery-demo.git
+- cd gcp-bigquery-demo
+- gcloud auth activate-service-account --key-file=oghub-userdb-live-bigquery-reader.json
+- gcloud auth list
+- bq ls --project ogino-userdb-live
